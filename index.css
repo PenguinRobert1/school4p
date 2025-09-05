@@ -1,0 +1,17 @@
+html {
+    background-color: lightgray;
+}
+
+.title {
+    color: blue;
+    font: bold;
+    font-size: 70px;
+    padding-top: 20px;
+}
+
+.name {
+    color: blue;
+    font: bold;
+    font-size: 40px;
+    padding-top: 5px;
+}
