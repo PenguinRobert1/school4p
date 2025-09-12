@@ -86,10 +86,6 @@ body {
   padding: 0; /* Removes default padding from the body */
 }
 
-#galaxy {
-  width: 100%; /* Ensures the container takes up the full width */
-}
-
 #galaxy img {
   width: 100%; /* Stretches the image to 100% of its container's width */
   height: auto; /* Maintains the image's aspect ratio */
