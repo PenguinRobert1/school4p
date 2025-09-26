@@ -90,6 +90,7 @@ body {
 }
 
 /* Ensure the galaxy banner always fills the viewport width without creating horizontal scroll */
+/* Ensure the galaxy banner always fills the viewport width without creating horizontal scroll */
 #galaxy,
 .galaxy-container {
   width: 100vw; /* match the viewport width */
@@ -113,6 +114,7 @@ body {
 
 /* Thumbnail button for opening the larger galaxy image */
 .image-button-container {
+  padding-top: 340px;
   text-align: center;
   margin: 20px 0;
   position: relative;
