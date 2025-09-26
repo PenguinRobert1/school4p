@@ -72,13 +72,16 @@ body {
   left: 30px;
 }
 
-DoNotEdit {
-  font: bold;
+/* Utility class kept for compatibility; target with class selector */
+.DoNotEdit {
+  font-weight: bold;
 }
 
+/* Make images responsive by default */
 .responsive-image {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 body {
@@ -86,10 +89,20 @@ body {
   padding: 0; /* Removes default padding from the body */
 }
 
-#galaxy img {
-  width: 100%; /* Stretches the image to 100% of its container's width */
-  height: auto; /* Maintains the image's aspect ratio */
-  display: block; /* Prevents unwanted spacing below the image */
+/* Ensure the galaxy banner always fills the viewport width without creating horizontal scroll */
+#galaxy,
+.galaxy-container {
+  width: 100vw; /* match the viewport width */
+  overflow: hidden; /* hide any tiny rounding overflow on mobile */
+  margin: 0; /* no extra space */
+}
+
+#galaxy img,
+.galaxy-container img {
+  width: 100vw; /* force image width to viewport width */
+  max-width: none; /* override default max-width */
+  height: auto; /* preserve aspect ratio */
+  display: block;
 }
 
 .about_me {
