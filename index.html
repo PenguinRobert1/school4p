@@ -32,6 +32,21 @@
         <span style="font-size:30px;color:aqua;cursor:pointer" onclick="openNav()">&#9776; Open</span>
       </div>
 
+      <!-- Thumbnail button: opens modal to show a bigger version of the galaxy image -->
+      <div class="image-button-container">
+        <button id="openGalaxyBtn" class="image-thumb-btn" aria-haspopup="dialog" aria-controls="galaxyModal">
+          <img src="/images/swift_M31_mosaic_1600.webp" alt="galaxy thumbnail" class="thumb-image" />
+        </button>
+      </div>
+
+      <!-- Modal / lightbox -->
+      <div id="galaxyModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content">
+          <button id="closeGalaxyBtn" class="modal-close" aria-label="Close">&times;</button>
+          <img id="modalImage" src="/images/swift_M31_mosaic_1600.webp" alt="large galaxy" class="modal-image" />
+        </div>
+      </div>
+
       <section>
         <center class="about_me">
           <p>about me
