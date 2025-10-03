@@ -246,10 +246,12 @@ img.hover-shadow {
 <script>
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+  document.querySelector(".back-button").style.display = "none"; // Hide the back button
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  document.querySelector(".back-button").style.display = "block"; // Show the back button
 }
 
 var slideIndex = 1;
