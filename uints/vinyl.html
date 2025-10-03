@@ -141,6 +141,28 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* Back button styling */
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f1f1f1;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
 </style>
 <body>
 
@@ -284,6 +306,8 @@ img.hover-shadow {
     </div>
   </div>
 </div>
+
+<a href="javascript:history.back()" class="back-button">Back</a>
 
 <script>
 function openModal() {
