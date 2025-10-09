@@ -109,7 +109,8 @@ body {
 .about_me {
   position: relative;
   color: aqua;
-  padding-top: 454px;
+  padding-bottom: 5px;
+  padding-top: 449px;
 }
 
 /* Modal (lightbox) styles */
