@@ -33,30 +33,6 @@
         <span style="font-size:30px;color:aqua;cursor:pointer" onclick="openNav()">&#9776; Open</span>
       </div>
 
-      <!-- Thumbnail button: updated to show a larger version of the image -->
-      <div class="game" style="opacity: 0; transform: translateY(-50px);">
-        <a href="javascript:void(0)" onclick="showModal()">
-          <img src="/images/swift_M31_mosaic_1600.webp" alt="galaxy thumbnail" />
-          <div class="game-title">View Galaxy</div>
-        </a>
-      </div>
-
-      <!-- Modal for larger image -->
-      <div id="imageModal" class="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);z-index:1000;align-items:center;justify-content:center;">
-        <img src="/images/swift_M31_mosaic_1600.webp" alt="galaxy large" style="max-width:90%;max-height:90%;" />
-        <button onclick="closeModal()" style="position:absolute;top:20px;right:20px;padding:10px;background-color:#fff;border:none;cursor:pointer;font-size:20px;line-height:1;">&times;</button>
-      </div>
-
-      <script>
-        function showModal() {
-          document.getElementById('imageModal').style.display = 'flex';
-        }
-
-        function closeModal() {
-          document.getElementById('imageModal').style.display = 'none';
-        }
-      </script>
-
       <section>
         <center class="about_me">
           <p>about me
@@ -72,3 +48,20 @@
   </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Clock/Clock.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock">
+            <div id="time" class="time">00:00:00</div>
+            <div id="date" class="date">Monday, January 1, 2023</div>
+        </div>
+    </div>
+    <script src="/Clock/Clock.js"></script>
+</body>
+</html>

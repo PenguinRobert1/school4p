@@ -1,0 +1,47 @@
+/* --- Combined and updated CSS --- */
+
+/* Reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling for general text and background */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #cccccc; /* Changed general text color to a light gray */
+    background-color: #000; /* Assuming a dark background from your galaxy image */
+}
+
+/* Clock Container */
+.clock-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    /* Positioned in the top-right corner */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* Clock Text */
+.time, .date {
+    color: #4dc2ff; /* A bright, eye-catching blue for the clock */
+}
+
+.time {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* ... Other styles ... */
