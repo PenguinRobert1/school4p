@@ -19,7 +19,7 @@ function updateClock() {
 
     // Update the time and date in the DOM
     document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
-    document.getElementById('date').textContent = `${dayName}, ${month} ${day}, ${year}`;
+    document.getElementById('date').textContent = `${dayName}, ${month} ${day}`;
 }
 
 // Update the clock every second
